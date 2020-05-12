@@ -61,8 +61,8 @@ public class ReuseCupActivity extends AppCompatActivity {
 
         /*Set all texts out of language class*/
         //region Texts
-        join.setText(Languages.get("JoinHabit"));
-        backToHabits.setText(Languages.get("BackToHabits"));
+        join.setText(Languages.get("join"));
+        backToHabits.setText(Languages.get("backToHabits"));
         title.setText(Languages.get("rCupTitle"));
         intr.setText(Languages.get("rCupIntr"));
         intrContent.setText(Languages.get("rCupIntrContent"));

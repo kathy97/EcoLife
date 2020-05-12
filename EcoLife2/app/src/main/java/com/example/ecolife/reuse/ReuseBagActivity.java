@@ -49,8 +49,8 @@ public class ReuseBagActivity extends AppCompatActivity {
         /*Contains all assignments from needed Buttons, TextViews, Edits etc.*/
         //region Zuweisungen
         drpdwn = findViewById(R.id.dropdownmenu);
-        join = findViewById(R.id.Join);
-        backToHabits = findViewById(R.id.backToHabits);
+        join = findViewById(R.id.join);
+        backToHabits = findViewById(R.id.backToHabits2);
         title = findViewById(R.id.reuseBagTitle);
         introduction = findViewById(R.id.reuseBagIntr);
         introductionContent = findViewById(R.id.reuseBagIntrContent);

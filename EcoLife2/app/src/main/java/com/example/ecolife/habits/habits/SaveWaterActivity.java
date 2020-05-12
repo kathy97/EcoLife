@@ -51,7 +51,7 @@ public class SaveWaterActivity extends AppCompatActivity
         drpdwn = findViewById(R.id.dropdownmenu);
         join = findViewById(R.id.join);
         backToHabits = findViewById(R.id.backToHabits);
-        link = findViewById(R.id.zeroWasteLink);
+        link = findViewById(R.id.zeroWasteLink2);
         title = findViewById(R.id.swTitle);
         content = findViewById(R.id.swContent);
         tipTitle = findViewById(R.id.swTipps);

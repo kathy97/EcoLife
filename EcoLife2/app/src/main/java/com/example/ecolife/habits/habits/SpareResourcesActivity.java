@@ -65,7 +65,7 @@ public class SpareResourcesActivity extends AppCompatActivity
         whatContent = findViewById(R.id.whatContent);
         tipps = findViewById(R.id.spareResTipps);
         tipp1 = findViewById(R.id.tipp1);
-        tipp2 = findViewById(R.id.tipp1a);
+        tipp1a = findViewById(R.id.tipp1a);
         tipp2 = findViewById(R.id.tipp2);
         tipp2a = findViewById(R.id.tipp2a);
         tipp3 = findViewById(R.id.tipp3);

@@ -50,7 +50,7 @@ public class ReuseBottleActivity extends AppCompatActivity {
         //region Zuweisungen
         drpdwn = findViewById(R.id.dropdownmenu);
         backToHabits = findViewById(R.id.backToHabits);
-        join = findViewById(R.id.Join);
+        join = findViewById(R.id.join);
         title = findViewById(R.id.reuseBottleTitle);
         intr = findViewById(R.id.reuseBottleIntr);
         intrContent = findViewById(R.id.reuseBottleContent);
