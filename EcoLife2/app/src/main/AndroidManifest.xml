@@ -10,7 +10,7 @@
         android:icon="@mipmap/ecolife"
 
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ecolife"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MyHabitsActivity"></activity>
@@ -40,17 +40,11 @@
         <activity android:name=".separate_waste.PlasticActivity" />
         <activity android:name=".separate_waste.DifferentWastesActivity" />
         <activity android:name=".separate_waste.SeparateWasteActivity" />
-        <activity android:name=".account.DeleteAccountActivity" />
-        <activity android:name=".account.AccountEditActivity" />
-        <activity android:name=".account.AccountActivity" />
         <activity android:name=".menu.HabitsActivity" />
         <activity android:name=".menu.LanguageActivity" />
         <activity android:name=".Calendar.SingleDateActivity" />
         <activity android:name=".Calendar.CalendarActivity" />
         <activity android:name=".menu.ImprintActivity" />
-        <activity android:name=".GetUsernamePassword.ResetPasscodeChangeActivity" />
-        <activity android:name=".GetUsernamePassword.ResetPasswordActivity" />
-        <activity android:name=".GetUsernamePassword.GetUsernameActivity" />
         <activity android:name=".home.HomeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
