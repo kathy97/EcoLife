@@ -8,6 +8,36 @@
     tools:context=".MyHabitsActivity">
 
     <ImageButton
+        android:id="@+id/refresh"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="44dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        android:foregroundGravity="center"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/repeat" />
+
+    <ImageButton
+        android:id="@+id/info"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="44dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        android:foregroundGravity="center"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/info" />
+
+    <ImageButton
         android:id="@+id/goHome"
         style="@style/Widget.AppCompat.ImageButton"
         android:layout_width="59dp"
@@ -18,7 +48,6 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/home_page" />
 

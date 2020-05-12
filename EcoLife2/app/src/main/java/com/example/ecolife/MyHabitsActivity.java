@@ -9,7 +9,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,9 +22,8 @@ import android.widget.TextView;
 import com.example.ecolife.Calendar.CalendarActivity;
 
 import com.example.ecolife.database.AddLogInDate;
-import com.example.ecolife.database.DBManager;
 import com.example.ecolife.database.DoneHabits;
-import com.example.ecolife.database.GetLogInDate;
+import com.example.ecolife.database.RemoveHabitFromDone;
 import com.example.ecolife.database.getChoosenHabits;
 import com.example.ecolife.home.HomeActivity;
 import com.example.ecolife.menu.HabitsActivity;
@@ -103,18 +101,17 @@ public class MyHabitsActivity extends AppCompatActivity
     LinearLayout noStraws;
     LinearLayout localSeasonal;
     final MyHabitsActivity myHabitsActivity = this;
-    List<String>habits = new ArrayList<>();
     TextView title;
     ImageButton backHome;
-
+    ImageButton refresh;
+    ImageButton info;
     String _date_;
-
+    List<String>MyHabits;
     //endregion
 
     /**Defines all final string keys used for the checkboxes to let them stay
      * checked*/
     //region Need to save Checkbox checked
-    boolean boolVariable = false;
     private static final String sepWasteKey = "sepWaste_Key";
     private static final String recycleKey = "recycle_Key";
     private static final String upcycleKey = "upcycle_Key";
@@ -207,6 +204,8 @@ public class MyHabitsActivity extends AppCompatActivity
         localSeasonalName = findViewById(R.id.localSeasonalName);
         localSeasonalDone = findViewById(R.id.localSeasonalDone);
         backHome = findViewById(R.id.goHome);
+        refresh = findViewById(R.id.refresh);
+        info = findViewById(R.id.info);
 
         sharedPrefs = getSharedPreferences("doneHabits", Context.MODE_PRIVATE);
         //endregion
@@ -282,8 +281,6 @@ public class MyHabitsActivity extends AppCompatActivity
         //endregion
 
 
-
-
         /*if CheckBox is checked, habit name is transferred to DoneHabits class and saved in Database
         * along with current date and UserID
         *
@@ -299,6 +296,12 @@ public class MyHabitsActivity extends AppCompatActivity
 
             }
         });
+        if (sepWasteDone.isChecked() == false)
+        {
+            RemoveHabitFromDone removeHabit = new RemoveHabitFromDone(dateFormat,"separateWaste" );
+            removeHabit.execute();
+
+        }
         //endregion
 
 
@@ -310,6 +313,12 @@ public class MyHabitsActivity extends AppCompatActivity
                 done.execute();
             }
         });
+        if (recyclingDone.isChecked() == false)
+        {
+            RemoveHabitFromDone removeHabit = new RemoveHabitFromDone(dateFormat,"recycle");
+            removeHabit.execute();
+
+        }
         //endregion
 
 
@@ -321,6 +330,12 @@ public class MyHabitsActivity extends AppCompatActivity
                 done.execute();
             }
         });
+        if (upcyclingDone.isChecked() == false)
+        {
+            RemoveHabitFromDone removeHabit = new RemoveHabitFromDone(dateFormat,"upcycle");
+            removeHabit.execute();
+
+        }
         //endregion
 
 
@@ -328,10 +343,16 @@ public class MyHabitsActivity extends AppCompatActivity
         reducePlasticDone.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                DoneHabits done = new DoneHabits( dateFormat,"reducePlastic" );
+                DoneHabits done = new DoneHabits( dateFormat,"reducePlasticDone" );
                 done.execute();
             }
         });
+        if (reducePlasticDone.isChecked() == false)
+        {
+            RemoveHabitFromDone removeHabit = new RemoveHabitFromDone(dateFormat,"reducePlasticDone");
+            removeHabit.execute();
+
+        }
         //endregion
 
 
@@ -343,6 +364,12 @@ public class MyHabitsActivity extends AppCompatActivity
                 done.execute();
             }
         });
+        if (nutritionDone.isChecked() == false)
+        {
+            RemoveHabitFromDone removeHabit = new RemoveHabitFromDone(dateFormat,"nutrition");
+            removeHabit.execute();
+
+        }
         //endregion
 
 
@@ -354,6 +381,12 @@ public class MyHabitsActivity extends AppCompatActivity
                 done.execute();
             }
         });
+        if (vegetarianDone.isChecked() == false)
+        {
+            RemoveHabitFromDone removeHabit = new RemoveHabitFromDone(dateFormat,"vegetarian");
+            removeHabit.execute();
+
+        }
         //endregion
 
 
@@ -365,6 +398,12 @@ public class MyHabitsActivity extends AppCompatActivity
                 done.execute();
             }
         });
+        if (veganDone.isChecked() == false)
+        {
+            RemoveHabitFromDone removeHabit = new RemoveHabitFromDone(dateFormat,"vegan");
+            removeHabit.execute();
+
+        }
         //endregion
 
 
@@ -376,6 +415,12 @@ public class MyHabitsActivity extends AppCompatActivity
                 done.execute();
             }
         });
+        if (reuseBagDone.isChecked() == false)
+        {
+            RemoveHabitFromDone removeHabit = new RemoveHabitFromDone(dateFormat,"reuseBag");
+            removeHabit.execute();
+
+        }
         //endregion
 
 
@@ -387,6 +432,12 @@ public class MyHabitsActivity extends AppCompatActivity
                 done.execute();
             }
         });
+        if (reuseCupDone.isChecked() == false)
+        {
+            RemoveHabitFromDone removeHabit = new RemoveHabitFromDone(dateFormat,"reuseCup");
+            removeHabit.execute();
+
+        }
         //endregion
 
 
@@ -398,6 +449,12 @@ public class MyHabitsActivity extends AppCompatActivity
                 done.execute();
             }
         });
+        if (reuseBottleDone.isChecked() == false)
+        {
+            RemoveHabitFromDone removeHabit = new RemoveHabitFromDone(dateFormat,"reuseBottle");
+            removeHabit.execute();
+
+        }
         //endregion
 
 
@@ -409,6 +466,12 @@ public class MyHabitsActivity extends AppCompatActivity
                 done.execute();
             }
         });
+        if (spareResourcesDone.isChecked() == false)
+        {
+            RemoveHabitFromDone removeHabit = new RemoveHabitFromDone(dateFormat,"spareResources");
+            removeHabit.execute();
+
+        }
         //endregion
 
 
@@ -420,6 +483,12 @@ public class MyHabitsActivity extends AppCompatActivity
                 done.execute();
             }
         });
+        if (saveWaterDone.isChecked() == false)
+        {
+            RemoveHabitFromDone removeHabit = new RemoveHabitFromDone(dateFormat,"saveWater");
+            removeHabit.execute();
+
+        }
         //endregion
 
 
@@ -431,6 +500,12 @@ public class MyHabitsActivity extends AppCompatActivity
                 done.execute();
             }
         });
+        if (savePowerDone.isChecked() == false)
+        {
+            RemoveHabitFromDone removeHabit = new RemoveHabitFromDone(dateFormat,"savePower");
+            removeHabit.execute();
+
+        }
         //endregion
 
 
@@ -442,6 +517,12 @@ public class MyHabitsActivity extends AppCompatActivity
                 done.execute();
             }
         });
+        if (carFreeDone.isChecked() == false)
+        {
+            RemoveHabitFromDone removeHabit = new RemoveHabitFromDone(dateFormat,"carFree");
+            removeHabit.execute();
+
+        }
         //endregion
 
 
@@ -453,6 +534,12 @@ public class MyHabitsActivity extends AppCompatActivity
                 done.execute();
             }
         });
+        if (consumerDone.isChecked() == false)
+        {
+            RemoveHabitFromDone removeHabit = new RemoveHabitFromDone(dateFormat,"consumer");
+            removeHabit.execute();
+
+        }
         //endregion
 
 
@@ -464,6 +551,12 @@ public class MyHabitsActivity extends AppCompatActivity
                 done.execute();
             }
         });
+        if (zeroWasteDone.isChecked() == false)
+        {
+            RemoveHabitFromDone removeHabit = new RemoveHabitFromDone(dateFormat,"zeroWaste");
+            removeHabit.execute();
+
+        }
         //endregion
 
 
@@ -475,6 +568,12 @@ public class MyHabitsActivity extends AppCompatActivity
                 done.execute();
             }
         });
+        if (noStrawsDone.isChecked() == false)
+        {
+            RemoveHabitFromDone removeHabit = new RemoveHabitFromDone(dateFormat,"noStraws");
+            removeHabit.execute();
+
+        }
         //endregion
 
 
@@ -486,6 +585,12 @@ public class MyHabitsActivity extends AppCompatActivity
                 done.execute();
             }
         });
+        if (localSeasonalDone.isChecked() == false)
+        {
+            RemoveHabitFromDone removeHabit = new RemoveHabitFromDone(dateFormat,"localSeasonal");
+            removeHabit.execute();
+
+        }
         //endregion
 
 
@@ -504,6 +609,30 @@ public class MyHabitsActivity extends AppCompatActivity
         });
         //endregion
 
+        /*Shows the user an information alert*/
+        //region InfoButton
+        info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder infoMsg = new AlertDialog.Builder(myHabitsActivity)
+                        .setTitle(Languages.get("infoTitle"))
+                        .setMessage(Languages.get("infoMessage"))
+                        .setCancelable(true)
+                        .setPositiveButton("OK", null);
+                infoMsg.create().show();
+            }
+        });
+        //endregion
+
+        /*Recreates this activity*/
+        //region Refresh Button
+        refresh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recreate();
+            }
+        });
+        //endregion
 
 
         SimpleDateFormat date_ = new SimpleDateFormat("dd.MM.yyyy", Locale.GERMANY);
@@ -527,6 +656,7 @@ public class MyHabitsActivity extends AppCompatActivity
             loadValues(habitsMap);
             setupCheckedChangeListener(habitsMap);
         }
+
 
     }
 
@@ -578,16 +708,9 @@ public class MyHabitsActivity extends AppCompatActivity
     /**Sets joined habits visible, so user can check them if he/she had done them*/
     public void setVisible(List<String> myHabits)
     {
-
         Calendar calendar = Calendar.getInstance();
         for(String habit : myHabits) {
-            /*
-            AlertDialog.Builder day = new AlertDialog.Builder(myHabitsActivity);
-            day.setMessage("habit  " + myHabits);
-            day.setPositiveButton("Ok", null);
-            day.setCancelable(true);
-            day.create().show();
-             */
+
             if(habit.equalsIgnoreCase("separateWaste"))
             {
                 separateWaste.setVisibility(View.VISIBLE);

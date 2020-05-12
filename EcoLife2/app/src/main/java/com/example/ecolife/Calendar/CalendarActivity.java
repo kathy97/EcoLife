@@ -15,7 +15,6 @@ import android.widget.PopupMenu;
 import android.widget.TextView;
 
 import com.example.ecolife.MyHabitsActivity;
-import com.example.ecolife.database.DBManager;
 import com.example.ecolife.menu.HabitsActivity;
 import com.example.ecolife.menu.LanguageActivity;
 import com.example.ecolife.R;
@@ -71,12 +70,6 @@ public class CalendarActivity extends AppCompatActivity
                 showMenu(v);
             }
         });
-
-        /*
-        calendarV.isClickable();
-        int day = (int) calendarV.getDate();
-        calendarV.getDisplay();
-         */
 
         /*Gets the selected day, month and year when clicking on a date in the calendar*/
         //region Kalender Klick Funktion

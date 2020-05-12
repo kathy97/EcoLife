@@ -20,9 +20,7 @@ import android.widget.TextView;
 import com.example.ecolife.Calendar.CalendarActivity;
 import com.example.ecolife.Calendar.SingleDateActivity;
 import com.example.ecolife.MyHabitsActivity;
-import com.example.ecolife.database.AddLogInDate;
 import com.example.ecolife.database.ChangeCalendarView;
-import com.example.ecolife.database.DBManager;
 import com.example.ecolife.database.GetCalendarView;
 import com.example.ecolife.database.GetLogInDate;
 import com.example.ecolife.menu.HabitsActivity;
@@ -32,7 +30,6 @@ import com.example.ecolife.R;
 import com.example.ecolife.otherClasses.Languages;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -77,10 +74,6 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
-       //File file = new File(getFilesDir(), "data.rp");
-        //path = file.getPath();
-
 
         /*Contains all the assignments from Buttons, TextEdits etc.*/
         //region Zuweisungen
@@ -274,18 +267,6 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
         //endregion
-
-        /*
-        LoggedInDates = new ArrayList<>();
-
-        if(!LoggedInDates.contains(Date__))
-        {
-            LoggedInDates.add(Date__);
-        }
-
-       // currentDate_ = Date__;
-        */
-
 
         GetLogInDate getDate = new GetLogInDate(homeActivity, currentDate_);
         getDate.execute();
@@ -499,9 +480,6 @@ public class HomeActivity extends AppCompatActivity {
     {
         currentDate_ = date;
 
-        //AlertDialog.Builder D = new AlertDialog.Builder(this);
-        //D.setMessage("Das Datum lautet: "+currentDate_);
-        //D.create().show();
     }
 
 }

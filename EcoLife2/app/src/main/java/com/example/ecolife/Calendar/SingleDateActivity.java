@@ -14,7 +14,6 @@ import android.widget.PopupMenu;
 import android.widget.TextView;
 
 import com.example.ecolife.MyHabitsActivity;
-import com.example.ecolife.database.DBManager;
 import com.example.ecolife.database.GetDoneHabits;
 import com.example.ecolife.home.HomeActivity;
 import com.example.ecolife.menu.HabitsActivity;
@@ -89,8 +88,6 @@ public class SingleDateActivity extends AppCompatActivity {
        int date = (int) getIntent().getExtras().get("day");
        int month = (int) getIntent().getExtras().get("month");
        int year = (int) getIntent().getExtras().get("year");
-
-
 
        String choosenDate;
        dropdown =findViewById(R.id.dropdownmenu);
@@ -267,18 +264,6 @@ public class SingleDateActivity extends AppCompatActivity {
         GetDoneHabits getDoneHabits = new GetDoneHabits(singleDateActivity, choosenDate);
         getDoneHabits.execute();
         //endregion
-
-        /*commented alert to check if date is right*/
-        //region Test ob Datum richtig
-        /*
-        AlertDialog.Builder day = new AlertDialog.Builder(singleDateActivity);
-        day.setMessage("der ausgewählte tag lautet " + date + "." + motnh + "." + year);
-        day.setPositiveButton("Ok", null);
-        day.setCancelable(true);
-        day.create().show();
-         */
-        //endregion
-
 
         /*Uses function to show the DropDownMenu*/
         //region Dropdown Menu show

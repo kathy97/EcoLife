@@ -9,7 +9,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
-import com.example.ecolife.database.DBManager;
 import com.example.ecolife.database.FirstCVEntry;
 import com.example.ecolife.database.LocalDatabase;
 import com.example.ecolife.home.HomeActivity;
@@ -32,7 +31,7 @@ public class MainActivity extends Activity {
         database = new LocalDatabase(this);
         Languages.setLanguages();
         Languages.setCurrentLanguage(Languages.Lang.GERMAN);
-        DBManager.createDatabase(this);
+
 
 
         //region First Start
@@ -103,27 +102,5 @@ public class MainActivity extends Activity {
 
     }
 
-
-    /**
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.dropdown_menu_1, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
-        switch ((item.getItemId()))
-        {
-            case R.id.home:
-                Toast.makeText(this, "Home selected..", Toast.LENGTH_SHORT).show();
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-    **/
 
 }

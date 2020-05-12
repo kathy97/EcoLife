@@ -14,7 +14,6 @@ import android.widget.TextView;
 
 import com.example.ecolife.Calendar.CalendarActivity;
 import com.example.ecolife.MyHabitsActivity;
-import com.example.ecolife.database.DBManager;
 import com.example.ecolife.habits.habits.CarFreeActivity;
 import com.example.ecolife.habits.habits.ConsumerActivity;
 import com.example.ecolife.R;

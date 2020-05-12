@@ -15,7 +15,6 @@ import android.widget.TextView;
 import com.example.ecolife.Calendar.CalendarActivity;
 import com.example.ecolife.MyHabitsActivity;
 import com.example.ecolife.R;
-import com.example.ecolife.database.DBManager;
 import com.example.ecolife.home.HomeActivity;
 import com.example.ecolife.otherClasses.Languages;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -90,14 +89,9 @@ public class ImprintActivity extends AppCompatActivity {
         //endregion
     }
 
-    /**Both regions used for dropdown menu contain a class to show the dropdown menu and give each menu item a name
+    /**used for dropdown menu contain a class to show the dropdown menu and give each menu item a name
      * and a class to make menu items clickable and open the wanted intent.
-     *
-     * Only difference is the number of Menu items in each dropdown menu
-     * ...Pre Login contains only 3 Menu items
-     * while the other dropdown menu after login contains 9 menu items*/
-
-
+     */
 
     //region Dropdown Menu
     public void showMenu(View view)

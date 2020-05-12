@@ -843,8 +843,11 @@ public class Languages
         english.put("content","Don't forget to track your habits!");
         //endregion
 
-        english.put("","");
-        english.put("","");
+        english.put("infoTitle","Information");
+        english.put("infoMessage","If you checked a habit on accident, \nrefresh the page with the " +
+                "refresh button on the right side!");
+
+
     }
 
     private static void setGerman()
@@ -1667,8 +1670,9 @@ public class Languages
         //endregion
 
 
-        german.put("","");
-        german.put("","");
+        german.put("infoTitle","Information");
+        german.put("infoMessage","Um eine bereits angehakte Gewohnheit wieder erfolgreich zu enthaken," +
+                "\nlade die Seite neu mit dem Icon unten rechts!");
 
     }
 

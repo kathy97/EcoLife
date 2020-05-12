@@ -47,14 +47,14 @@ public class GetDoneHabits extends AsyncTask<String, String, List<String>>
     @Override
     protected List<String> doInBackground(String... strings)
     {
-       //Log.d("Test 1","test a");
-        System.out.println("DoneHabit Test");
+
+
         try {
             Thread.sleep(1000);
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
         SQLiteDatabase DB = MainActivity.database.getWriteableDb();
         Cursor cursor = DB.rawQuery("SELECT HabitName FROM DoneHabits WHERE HabitDatum= '"+this.Date+"';",null);
         Boolean exist = cursor.moveToFirst();

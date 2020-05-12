@@ -16,7 +16,6 @@ import android.widget.TextView;
 import com.example.ecolife.Calendar.CalendarActivity;
 import com.example.ecolife.MyHabitsActivity;
 import com.example.ecolife.R;
-import com.example.ecolife.database.DBManager;
 import com.example.ecolife.database.JoinHabitFromHabit;
 import com.example.ecolife.home.HomeActivity;
 import com.example.ecolife.menu.HabitsActivity;
