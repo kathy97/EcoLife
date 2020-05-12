@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9DEFCCD"
+    tools:context=".reuse.ReuseBagActivity">
+
+    <TextView
+        android:id="@+id/reuseBagTitle"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="302dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Wiederverwendbare Taschen"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/dropdownmenu"
+        android:layout_width="78dp"
+        android:layout_height="56dp"
+        android:clickable="true"
+        app:backgroundTint="#F1F8E9"
+        app:backgroundTintMode="src_over"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxImageSize="50dp"
+        app:srcCompat="@drawable/menu" />
+
+    <ImageView
+        android:id="@+id/logo28"
+        android:layout_width="66dp"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/appName28"
+        android:layout_width="66dp"
+        android:layout_height="21dp"
+        android:gravity="center"
+        android:text="Eco-Life"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold"
+        app:fontFamily="cursive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo28" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reuseBagTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/sepWaste"
+                android:layout_width="318dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="#D8FFFFFF"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/reuseBagIntr"
+                        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="#E0F7FA"
+                        android:gravity="center"
+                        android:text="Einleitung"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/reuseBagIntrContent"
+                        android:layout_width="306dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:text="Die Plastik-'Sackerln' die man in jedem Laden um ein paar Cent bekommt, oder beim Obst und Gemüse kostenlos zum Einpacken und abwägen der Ware erhältlich sind, haben eine sehr kurze Lebensdauer und sind außerdem nicht lang wiederverwendbar.
+                        \n\nIn der Theorie kann man diese Plastiksäcke öfter als nur einmal wiederverwenden. Allerdings sind diese nicht so stabil und langlebig wie die Alternativen die es gibt."
+
+                        android:textColor="#E2161515" />
+
+                    <TextView
+                        android:id="@+id/reuseBagAlternatives"
+                        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                        android:layout_width="309dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="#E0F7FA"
+                        android:gravity="center|left"
+                        android:text="Welche Alternativen gibt es?"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/reuseBagAlternativesContent"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="Jute
+                        \n\nStoff/e
+                        \n\nLeinen
+                        \n\nBaumwolle
+                        \n\nWiederverwendbare Polypropylentaschen
+                        \n\nMaschenbeutel
+                        \n\nNetztaschen"
+                        android:textColor="#E6181414"
+                        android:layout_marginBottom="30dp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/backToHabits2"
+                    android:layout_width="156dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="#CBDBFFC2"
+                    android:text="Zurück zu den Gewohnheiten"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/join"
+                    android:layout_width="156dp"
+                    android:layout_height="26dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:background="#CBDBFFC2"
+                    android:text="Beitreten"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9DEFCCD"
+    tools:context=".habits.habits.ZeroWasteActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/dropdownmenu"
+        android:layout_width="78dp"
+        android:layout_height="56dp"
+        android:clickable="true"
+        app:backgroundTint="#F1F8E9"
+        app:backgroundTintMode="src_over"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxImageSize="50dp"
+        app:srcCompat="@drawable/menu" />
+
+    <TextView
+        android:id="@+id/appName32"
+        android:layout_width="66dp"
+        android:layout_height="21dp"
+        android:gravity="center"
+        android:text="Eco-Life"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold"
+        app:fontFamily="cursive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo32" />
+
+    <ImageView
+        android:id="@+id/logo32"
+        android:layout_width="66dp"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/zwTitle"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="302dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Zero Waste"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zwTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/sepWaste"
+                android:layout_width="318dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="#D8FFFFFF"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/zwContent"
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Da die Müllansammlung immer weiter wächst, obwohl sie ohnehin schon gewaltig groß ist, ist es an der Zeit wirklich umzudenken!
+                        \n\nMüll reduzieren ist eine Sache, versuchen mit möglichst ohne Müll zu leben, eine andere!"
+                        android:textColor="#E2161515" />
+
+                    <TextView
+                        android:id="@+id/zwHow"
+                        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                        android:layout_width="309dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="#FBE9E7"
+                        android:gravity="center|left"
+                        android:text="Wie geht Zero-Waste?"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/zw1"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="Zu einem Teil gehört das Konsumverhalten auch in Zero-Waste einbezogen, da man es als Kunde in der Hand hat, welche Produkte in den Warenkorb kommen und welche nicht!
+"
+                        android:textColor="#E6181414" />
+
+                    <TextView
+                        android:id="@+id/zw1a"
+                        android:layout_width="286dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Auf Glas- oder andere Wiederverwendbare Verpackungen achten.
+                        \n\nAuf unnötige Verpackungen verzichten."
+                        android:textColor="#E6181414" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="159dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/Alternatives"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#FBE9E7"
+                                android:gravity="center"
+                                android:text="Alternativen"
+                                android:textAllCaps="true"
+                                android:textColor="#050505"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/alt1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Rasierhobel"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Deo-Creme"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Bambus-Zahnbürste"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Guter ganzer Kaffee"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Wachspapier"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Stoffbeutel"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Salat selbst richten"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Besteck mitbringen"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Glasflasche"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Essen mitbringen"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Feste Zahnpasta/Kapseln"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Waschbare Taschentücher"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Unverpackte Naturseife  aus Reformhaus oder Bio-Laden"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Rasierseife"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Feste Seife"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Haarseife und feste Spülung"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt17"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Waschbare Reinigungspads"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt18"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Waschpulver"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt19"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Bambus/Edelstahl Ohrreiniger"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Peeling-Seifen"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt21"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Bürsten und Kämme aus Naturmaterialien"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt22"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Wiederverwendbare Strohhalme"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt23"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Keine Werbung aufkleber \n"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt24"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Pfandflaschen"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt25"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Menstruationstasse"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/alt26"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Auswaschbare Binden/Slipeinlagen/Schwämmchen"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:showDividers="beginning"
+                            android:soundEffectsEnabled="false"
+                            android:splitMotionEvents="false">
+
+                            <TextView
+                                android:id="@+id/wfProduct"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#FBE9E7"
+                                android:gravity="center"
+                                android:text="'Original'"
+                                android:textAllCaps="true"
+                                android:textColor="#050505"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/org1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Einwegrasierer"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Deo-Spray"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Plastikzahnbürste"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Kapselkaffee"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Alufolie"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Plastiktaschen"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Fertige Salate"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Plastik Besteck"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="PET-Flasche"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Essen von Imbiss-Buden"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Zahnpasta aus der \nTube"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Wegwerf  \nTaschentücher"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Flüssigseife, \nmehrfach verpackte feste Seife"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Rasierschaum/-gel"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Duschgel"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org17"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Shampoo und Contitioner"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org18"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Einweg Wattepads\n"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org19"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Flüssig Waschmittel"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Wattestäbchen\n"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org21"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Peeling aus der Tube"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org22"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Bürsten und Kämme aus Plastik "
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org23"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Plastik Strohhalme \n"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org24"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Gegen unnötige Werbung"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org25"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Einwegflaschen"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org26"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Tampons"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/org27"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#94FBE9E7"
+                                android:text="Einweg Damenhygieneprodukte \n"
+                                android:textColor="#000000" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/zeroWasteLink"
+                        android:layout_width="233dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="30dp"
+                        android:background="#FBE9E7"
+                        android:onClick="openLink"
+                        android:text="Zero-Waste Tipps" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/backToHabits"
+                    android:layout_width="156dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="#CBDBFFC2"
+                    android:text="Zurück zu den Gewohnheiten"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/join"
+                    android:layout_width="156dp"
+                    android:layout_height="26dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:background="#CBDBFFC2"
+                    android:text="Beitreten"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9DEFCCD"
+    tools:context=".nutrition.NutritionActivity">
+
+    <TextView
+        android:id="@+id/nutrTitle"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="261dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Ernährung"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/dropdownmenu"
+        android:layout_width="78dp"
+        android:layout_height="56dp"
+        android:clickable="true"
+        app:backgroundTint="#F1F8E9"
+        app:backgroundTintMode="src_over"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxImageSize="50dp"
+        app:srcCompat="@drawable/menu" />
+
+    <ImageView
+        android:id="@+id/logo24"
+        android:layout_width="66dp"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/appName24"
+        android:layout_width="66dp"
+        android:layout_height="21dp"
+        android:gravity="center"
+        android:text="Eco-Life"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold"
+        app:fontFamily="cursive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo24" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nutrTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/sepWaste"
+                android:layout_width="318dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="#D8FFFFFF"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nutrIG"
+                        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="#FFF8E1"
+                        android:gravity="center"
+                        android:text="Allgemein"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/nutrContent"
+                        android:layout_width="306dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:text="Nahrung ist lebensnotwendig, ohne Lebens- und Nahrungsmittel könnten wir nicht auskommen.
+                        \nUnser Körper braucht für alle täglichen Aktivitäten, Arbeiten und Körperfunktionen Energie. Diese Energie erhalten wir durch Essen und Schlafen.
+                        \n\nIn der Nahrung sind auch viele gesunde Inhaltsstoffe, wie z.B. Mineralien, Vitamine und Spurenelemente vorhanden.
+                        \nDurch diese Inhaltsstoffe wird unser Immunsystem gestärkt und viele Krankheiten vorgebeugt.
+                        \n\nMit der richtigen Lebensweise und einer gesunden Ernährung können auch Volkskrankheiten vorgebeugt werden."
+                        android:textColor="#E2161515" />
+
+                    <TextView
+                        android:id="@+id/nutrTipps"
+                        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                        android:layout_width="309dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="#FFF3E0"
+                        android:gravity="center|left"
+                        android:text="Tipps"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/nutrOne"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="Frisch kochen anstelle von Fertiggerichten!
+                        \n\nObst und Gemüse nach Möglichkeit selbst anbauen!
+                        \n\nKräuter selbst anbauen bzw. in Blumentöpfen einpflanzen!
+                        \n\nLokal und saisonal einkaufen!"
+                        android:textColor="#E6181414" />
+
+                    <TextView
+                        android:id="@+id/nutrTwo"
+                        android:layout_width="286dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:text="Auf Siegel achten
+                        \n\nNachschlagen was wann aktuell ist"
+                        android:textColor="#E6181414" />
+
+                    <TextView
+                        android:id="@+id/nutrThree"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="Fleisch reduzieren!"
+                        android:textColor="#E6181414" />
+
+                    <TextView
+                        android:id="@+id/nutrFour"
+                        android:layout_width="286dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:text="Auf Gütesiegel achten
+                        \n\nLokale Bauern vorziehen
+                        \n\nAuf artgerechte Tierhaltung achten, Massentierhaltung vermeiden"
+                        android:textColor="#E6181414" />
+
+                    <TextView
+                        android:id="@+id/nutrFive"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="Auf Freiland Siegel achten!"
+                        android:textColor="#E6181414" />
+
+                    <TextView
+                        android:id="@+id/nutrSix"
+                        android:layout_width="286dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:text="Bei Eiern
+                        \n\nMilch - von Kühen die auch mal frische Luft zu atmen und frisches Gras zu fressen bekommen."
+                        android:textColor="#E6181414" />
+
+                    <TextView
+                        android:id="@+id/nutrSeven"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Auf Transportwege achten!
+                        \n\nBio- oder Wochenmärkte besuchen!
+                        \n\nVorteil regionaler und saisonaler Ernährung!"
+                        android:textColor="#E6181414" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/backToHabits"
+                    android:layout_width="156dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="#CBDBFFC2"
+                    android:text="Zurück zu den Gewohnheiten"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/Join"
+                    android:layout_width="156dp"
+                    android:layout_height="26dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:background="#CBDBFFC2"
+                    android:text="Beitreten"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

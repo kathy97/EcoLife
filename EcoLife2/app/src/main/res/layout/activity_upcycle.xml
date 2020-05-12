@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9DEFCCD"
+    tools:context=".habits.habits.UpcycleActivity">
+
+    <TextView
+        android:id="@+id/upcycleTitle"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="273dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:text="Upcycle"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/logo22"
+        android:layout_width="66dp"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/appName22"
+        android:layout_width="66dp"
+        android:layout_height="21dp"
+        android:gravity="center"
+        android:text="Eco-Life"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold"
+        app:fontFamily="cursive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo22" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/dropdownmenu"
+        android:layout_width="78dp"
+        android:layout_height="56dp"
+        android:clickable="true"
+        app:backgroundTint="#F1F8E9"
+        app:backgroundTintMode="src_over"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxImageSize="50dp"
+        app:srcCompat="@drawable/menu" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upcycleTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="322dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="#D8FFFFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/upcycleContent"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:text="Es ist super einfach aus alten Sachen, etwas neues zu schaffen!
+                    \n\nWer kennt es nicht?
+                    \nMan hat jede menge alten Kram zu Hause rumliegen den keiner mehr will oder braucht...
+                    \n\nDer Kleiderschrank ist voll und man hat nichts zum Anziehen?
+                    \nEin Grund dafür kann sein, das man alte Kleidung die man nicht mehr trägt, hortet - davon trennen kann man sich allerdings auch nicht...
+                    \n\nDas ist wo 'Upcycling' ins Spiel kommt!
+                    \nMan verwertet einfach seine alten Sachen in etwas neues und individuelles - etwas das sonst, so auf diese Art, noch niemand bei sich zu Hause hat!
+                    \n\n\nHier unten findet Ihr ein paar tolle Links zu Upcycling-Ideen!"
+                    android:textColor="#E6181414" />
+
+                <Button
+                    android:id="@+id/LinkHandmadeKultur"
+                    android:layout_width="244dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="#3C6DF1DD"
+                    android:onClick="handmadeK"
+                    android:text="Handmade Kultur" />
+
+                <Button
+                    android:id="@+id/LinkDIYAcademy"
+                    android:layout_width="246dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="#3C6DF1DD"
+                    android:onClick="diyAcademy"
+                    android:text="DIY Academy" />
+
+                <Button
+                    android:id="@+id/LinkDIYMode"
+                    android:layout_width="246dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="1"
+                    android:background="#3C6DF1DD"
+                    android:onClick="diyMode"
+                    android:text="DIY Mode" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/backToHabits"
+                    android:layout_width="156dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="#CBDBFFC2"
+                    android:text="Zurück zu den Gewohnheiten"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/Join"
+                    android:layout_width="156dp"
+                    android:layout_height="26dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:background="#CBDBFFC2"
+                    android:text="Beitreten"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

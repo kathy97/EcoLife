@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ecolife">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ecolife"
+
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MyHabitsActivity"></activity>
+        <activity android:name=".habits.habits.LocalSeasonalActivity" />
+        <activity android:name=".habits.habits.NoStrawsActivity" />
+        <activity android:name=".habits.habits.ConsumerActivity" />
+        <activity android:name=".habits.habits.CarFreeActivity" />
+        <activity android:name=".habits.habits.SaveWaterActivity" />
+        <activity android:name=".habits.habits.SavePowerActivity" />
+        <activity android:name=".habits.habits.ZeroWasteActivity" />
+        <activity android:name=".habits.habits.SpareResourcesActivity" />
+        <activity android:name=".reuse.ReuseBottleActivity" />
+        <activity android:name=".reuse.ReuseCupActivity" />
+        <activity android:name=".reuse.ReuseBagActivity" />
+        <activity android:name=".reuse.ReuseInfoActivity" />
+        <activity android:name=".nutrition.VeganActivity" />
+        <activity android:name=".nutrition.VegetarianActivity" />
+        <activity android:name=".nutrition.NutritionActivity" />
+        <activity android:name=".habits.habits.ReducePlasticActivity" />
+        <activity android:name=".habits.habits.UpcycleActivity" />
+        <activity android:name=".habits.habits.RecycleActivity" />
+        <activity android:name=".separate_waste.OtherActivity" />
+        <activity android:name=".separate_waste.EcoActivity" />
+        <activity android:name=".separate_waste.GlassActivity" />
+        <activity android:name=".separate_waste.PaperActivity" />
+        <activity android:name=".separate_waste.ResidualActivity" />
+        <activity android:name=".separate_waste.PlasticActivity" />
+        <activity android:name=".separate_waste.DifferentWastesActivity" />
+        <activity android:name=".separate_waste.SeparateWasteActivity" />
+        <activity android:name=".account.DeleteAccountActivity" />
+        <activity android:name=".account.AccountEditActivity" />
+        <activity android:name=".account.AccountActivity" />
+        <activity android:name=".menu.HabitsActivity" />
+        <activity android:name=".menu.LanguageActivity" />
+        <activity android:name=".Calendar.SingleDateActivity" />
+        <activity android:name=".Calendar.CalendarActivity" />
+        <activity android:name=".menu.ImprintActivity" />
+        <activity android:name=".GetUsernamePassword.ResetPasscodeChangeActivity" />
+        <activity android:name=".GetUsernamePassword.ResetPasswordActivity" />
+        <activity android:name=".GetUsernamePassword.GetUsernameActivity" />
+        <activity android:name=".home.HomeActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".otherClasses.Notification_reciever"/>
+    </application>
+
+</manifest>

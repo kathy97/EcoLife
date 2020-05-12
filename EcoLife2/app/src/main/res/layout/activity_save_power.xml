@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9DEFCCD"
+    tools:context=".habits.habits.SavePowerActivity">
+
+    <ImageView
+        android:id="@+id/logo33"
+        android:layout_width="66dp"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/dropdownmenu"
+        android:layout_width="78dp"
+        android:layout_height="56dp"
+        android:clickable="true"
+        app:backgroundTint="#F1F8E9"
+        app:backgroundTintMode="src_over"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxImageSize="50dp"
+        app:srcCompat="@drawable/menu" />
+
+    <TextView
+        android:id="@+id/appName33"
+        android:layout_width="66dp"
+        android:layout_height="21dp"
+        android:gravity="center"
+        android:text="Eco-Life"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold"
+        app:fontFamily="cursive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo33" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/sepWaste"
+                android:layout_width="318dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="#D8FFFFFF"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/spContent"
+                        android:layout_width="297dp"
+                        android:layout_height="119dp"
+
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:text="Strom wird in der heutigen Zeit täglich gebraucht. Sei es zum Kochen, Heizen oder für die Arbeit - ohne Strom würde alles Still stehen!
+                        \n\nEin guter schritt in die richtige Richtung ist es, darauf zu achten, woher der Strom kommt!"
+                        android:textColor="#E2161515" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="159dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/eco"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#BECEDCF5"
+                                android:gravity="center"
+                                android:text="Ökologisch"
+                                android:textAllCaps="true"
+                                android:textColor="#050505"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/eco1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Windenergie"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/eco2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#61CEDCF5"
+                                android:text="Solarenergie"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/eco3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Wasserenergie"
+                                android:textColor="#000000" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:showDividers="beginning"
+                            android:soundEffectsEnabled="false"
+                            android:splitMotionEvents="false">
+
+                            <TextView
+                                android:id="@+id/notEco"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="#BECEDCF5"
+                                android:gravity="center"
+                                android:text="Nicht ökologisch"
+                                android:textAllCaps="true"
+                                android:textColor="#050505"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/nEco1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Atomenergie"
+                                android:textColor="#000000" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/spTipps"
+                        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                        android:layout_width="309dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="#BECEDCF5"
+                        android:gravity="center|left"
+                        android:text="Tipps"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/tippsContent"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="30dp"
+                        android:text="Unter Tags kein Licht einschalten!
+                        \n\nUnnötiges Licht ausschalten!
+                        \n\nEinheizen nur wenn kalt ist!
+                        \n\nIm Sommer Haare Lufttrocknen statt Föhnen!
+                        \n\nRadio, TV und PC nur dann einschalten, wenn man ihn auch verwendet!
+                        \n\nHandy, iPod, Tablet nur so lange laden bis der Akku voll ist!
+                        \n\nNicht gebrauchte Geräte vom Strom nehmen
+                        \n\nLadegeräte immer abstecken!
+                        \n\nWäsche aufhängen statt in den Wäschetrockner geben - Insbesondere im Sommer und bei Schönwetter!
+                        \n\nKühl- und Gefrierschräke regelmäßig abtauen!
+                        \n\nKühlschrank nicht neben Wärmequellen aufstellen!
+                        \n\nRestwärme von Herd und Bügeleisen ausnutzen!
+                        \n\nTrockner und Waschmaschine erst dann einschalten, wenn sie auch wirklich voll sind!
+                        \n\nKühlschrank immer gleich wieder schließen!"
+                        android:textColor="#E6181414" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/backToHabits"
+                    android:layout_width="156dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="#CBDBFFC2"
+                    android:text="Zurück zu den Gewohnheiten"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/join"
+                    android:layout_width="156dp"
+                    android:layout_height="26dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:background="#CBDBFFC2"
+                    android:text="Beitreten"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/spTitle"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="302dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Strom sparen"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

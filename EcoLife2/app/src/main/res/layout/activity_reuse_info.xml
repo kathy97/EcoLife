@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9DEFCCD"
+    tools:context=".reuse.ReuseInfoActivity">
+
+    <TextView
+        android:id="@+id/reuseInfoTitle"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="302dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Wiederverwenden Information"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/dropdownmenu"
+        android:layout_width="78dp"
+        android:layout_height="56dp"
+        android:clickable="true"
+        app:backgroundTint="#F1F8E9"
+        app:backgroundTintMode="src_over"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxImageSize="50dp"
+        app:srcCompat="@drawable/menu" />
+
+    <ImageView
+        android:id="@+id/logo27"
+        android:layout_width="66dp"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/appName27"
+        android:layout_width="66dp"
+        android:layout_height="21dp"
+        android:gravity="center"
+        android:text="Eco-Life"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold"
+        app:fontFamily="cursive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo27" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reuseInfoTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/sepWaste"
+                android:layout_width="318dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="#D8FFFFFF"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/reuseInfoWhy"
+                        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="#41575A5A"
+                        android:gravity="center"
+                        android:text="Warum?"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/reuseInfoWhyContent"
+                        android:layout_width="306dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:text="Ein guter Weg die Müllberge zu reduzieren, ist die Verwendung Wiederverwendbarer Gegenstände. Auf diese Art und Weise werden auch Ressourcen geschont, da nicht laufend neue Ware produziert werden muss.
+                    \n\nDie Alternativen zu den Einweg - Produkten sind gewiss langlebiger und im Schnitt auf die Dauer aufgerechnet sogar günstiger."
+                        android:textColor="#E2161515" />
+
+                    <TextView
+                        android:id="@+id/reuseInfoWhyBetter"
+                        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                        android:layout_width="309dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="#41575A5A"
+                        android:gravity="center|left"
+                        android:text="Warum Alternativen besser sind!"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/why1"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="Waschbar!"
+                        android:textColor="#E6181414" />
+
+                    <TextView
+                        android:id="@+id/why2"
+                        android:layout_width="286dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:text="Es kommt darauf an zu welchem Produkt man die Alternative  verwendet.
+                        \n\nJe nachdem ist sie Waschmaschinen oder Spülmaschinen geeignet!"
+                        android:textColor="#E6181414" />
+
+                    <TextView
+                        android:id="@+id/why3"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="Längere Lebensdauer!"
+                        android:textColor="#E6181414" />
+
+                    <TextView
+                        android:id="@+id/why4"
+                        android:layout_width="286dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:text="Im Gegensatz zu den Plastik-Einwegprodukten kann man sie über mehrere Jahre hinweg verwenden!
+                        \n\nDurch die erhöhte Lebensdauer, können Alternativen immer wieder verwendet werden, weil sie sich auch wesentlich langsamer abnützen als das Einweg-Produkt."
+                        android:textColor="#E6181414" />
+
+                    <TextView
+                        android:id="@+id/why5"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="Umweltfreundlicher!"
+                        android:textColor="#E6181414" />
+
+                    <TextView
+                        android:id="@+id/why6"
+                        android:layout_width="286dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:text="Man wirft weniger weg, und es muss im Anschluss dafür weniger nachproduziert werden."
+                        android:textColor="#E6181414" />
+
+                    <TextView
+                        android:id="@+id/why7"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="Günstiger!"
+                        android:textColor="#E6181414" />
+
+                    <TextView
+                        android:id="@+id/why8"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="In der ersten Anschaffung mag es eventuell teurer vorkommen, aber wenn man dann mal einen Moment nachdenkt und nachrechnet merkt man, das über die Dauer gesehen, die Alternativen günstiger sind."
+                        android:textColor="#E6181414" />
+
+                    <TextView
+                        android:id="@+id/reuseInfoWhyDoThat"
+                        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                        android:layout_width="309dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="#41575A5A"
+                        android:gravity="center|left"
+                        android:text="Wir sollten auf Alternativen umsteigen weil ..."
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/why01"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="Müllansammlung doppelt so groß wie Frankreich!"
+                        android:textColor="#E6181414" />
+
+                    <TextView
+                        android:id="@+id/why02"
+                        android:layout_width="286dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:text="Frankreich hat eine Fläche von 643,801 km², rechnet man also das Doppelte aus erhält man eine Fläche von 1287,602 km²."
+                        android:textColor="#E6181414" />
+
+                    <TextView
+                        android:id="@+id/why03"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="Schwer bis gar nicht abbaubar!
+                        \n\nWird nicht recycelt!"
+                        android:textColor="#E6181414" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/backToHabits"
+                    android:layout_width="358dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_weight="1"
+                    android:background="#CBDBFFC2"
+                    android:text="Zurück zu den Gewohnheiten"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

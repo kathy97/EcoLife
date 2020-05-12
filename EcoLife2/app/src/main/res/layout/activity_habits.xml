@@ -1,0 +1,1499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9DEFCCD"
+    tools:context=".menu.HabitsActivity">
+
+    <TextView
+        android:id="@+id/titleHabits"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="273dp"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:text="Gewohnheiten"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <ImageView
+        android:id="@+id/logo9"
+        android:layout_width="66dp"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/appName9"
+        android:layout_width="66dp"
+        android:layout_height="21dp"
+        android:gravity="center"
+        android:text="Eco-Life"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold"
+        app:fontFamily="cursive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo9" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/dropdownmenu"
+        android:layout_width="78dp"
+        android:layout_height="56dp"
+        android:clickable="true"
+        app:backgroundTint="#F1F8E9"
+        app:backgroundTintMode="src_over"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxImageSize="50dp"
+        app:srcCompat="@drawable/menu" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleHabits"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="40dp">
+
+            <LinearLayout
+                android:id="@+id/SeperateWaste"
+                android:layout_width="249dp"
+                android:layout_height="414dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="170dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/sepWasteIcon"
+                    android:layout_width="147dp"
+                    android:layout_height="107dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/seperatewaste" />
+
+                <TextView
+                    android:id="@+id/seperateWaste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Müll trennen"
+                    android:textColor="#F3000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/sepWasteShortDesc"
+                    android:layout_width="200dp"
+                    android:layout_height="148dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:gravity="center"
+                    android:text="Wo gehört was hin? \nWas gehört alles in den Plastikmüll? \nFragen, die man sich im Alltag so stellt ... \n\nHier geht es rund um das Trennen von Müll!"
+                    android:textColor="#D5090909" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/sepWasteDescButton"
+                        android:layout_width="165dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beschreibung"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/sepWasteJoinButton"
+                        android:layout_width="144dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beitreten"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Recycle"
+                android:layout_width="249dp"
+                android:layout_height="414dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="170dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/recycleIcon"
+                    android:layout_width="147dp"
+                    android:layout_height="107dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/recycle" />
+
+                <TextView
+                    android:id="@+id/recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Recycle"
+                    android:textColor="#F3000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/recycleShortDesc"
+                    android:layout_width="200dp"
+                    android:layout_height="148dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:gravity="center"
+                    android:text="Recycling bedeutet das Wiederverwerten alter Sachen. \n\nHier findet Ihr ein paar Tipps zum Thema Recycling!"
+                    android:textColor="#D5090909" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/recycleDescButton"
+                        android:layout_width="165dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beschreibung"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/recycleJoin"
+                        android:layout_width="144dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beitreten"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Upcycling"
+                android:layout_width="249dp"
+                android:layout_height="414dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="170dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/upcycleIcon"
+                    android:layout_width="147dp"
+                    android:layout_height="107dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/upcycle" />
+
+                <TextView
+                    android:id="@+id/upcyclingTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Upcycle"
+                    android:textColor="#F3000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/upcycleShortDesc"
+                    android:layout_width="200dp"
+                    android:layout_height="148dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:gravity="center"
+                    android:text="Aus alt mach neu! \n\nManchmal lassen sich aus alten Sachen ganz leicht neue herstellen."
+                    android:textColor="#D5090909" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/upcycleDescButton"
+                        android:layout_width="165dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beschreibung"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/upcycleJoin"
+                        android:layout_width="144dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beitreten"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reducePlastic"
+                android:layout_width="249dp"
+                android:layout_height="414dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="170dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/reducePlasticIcon"
+                    android:layout_width="147dp"
+                    android:layout_height="107dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/reduceplastic" />
+
+                <TextView
+                    android:id="@+id/reducePlasticTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Plastik reduzieren"
+                    android:textColor="#F3000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/reducePlasticShortDesc"
+                    android:layout_width="200dp"
+                    android:layout_height="148dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:gravity="center"
+                    android:text="Die Ansammlung an Plastik wird immer größer … \n\nAußerdem kann es nicht abgebaut werden, weshalb es von Vorteil ist Plastik zu reduzieren."
+                    android:textColor="#D5090909" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/reducePlasticDescButton"
+                        android:layout_width="165dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beschreibung"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/reducePlasticJoin"
+                        android:layout_width="144dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beitreten"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Nutrition"
+                android:layout_width="249dp"
+                android:layout_height="414dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="170dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/nutritionIcon"
+                    android:layout_width="147dp"
+                    android:layout_height="107dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/nutrition" />
+
+                <TextView
+                    android:id="@+id/nutritionTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Ernährung"
+                    android:textColor="#F3000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/nutritionShortDesc"
+                    android:layout_width="200dp"
+                    android:layout_height="148dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:gravity="center"
+                    android:text="Nahrung ist für uns alle von Wichtigkeit. Ohne Nahrung wären wir auf Dauer nicht lebensfähig."
+                    android:textColor="#D5090909" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/nutritionDescButton"
+                        android:layout_width="165dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beschreibung"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/nutritionJoin"
+                        android:layout_width="144dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beitreten"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Vegetarian"
+                android:layout_width="249dp"
+                android:layout_height="414dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="170dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/vegetarianIcon"
+                    android:layout_width="159dp"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/vegetarian" />
+
+                <TextView
+                    android:id="@+id/vegetarianTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Vegetarisch"
+                    android:textColor="#F3000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/vegetarianShortDesc"
+                    android:layout_width="200dp"
+                    android:layout_height="148dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:gravity="center"
+                    android:text="Fleisch hat wie so alles im Leben seine Vor-und Nachteile ... \n\nHier ein paar Informationen, warum weniger Fleisch eine Option ist!"
+                    android:textColor="#D5090909" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/vegetarianDescButton"
+                        android:layout_width="165dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beschreibung"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/vegetarianJoin"
+                        android:layout_width="144dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beitreten"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Vegan"
+                android:layout_width="249dp"
+                android:layout_height="414dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="170dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/veganIcon"
+                    android:layout_width="159dp"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/vegan" />
+
+                <TextView
+                    android:id="@+id/veganTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Vegan"
+                    android:textColor="#F3000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/veganShortDesc"
+                    android:layout_width="200dp"
+                    android:layout_height="148dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:gravity="center"
+                    android:text="Die Geister scheiden sich, was hinter Veganismus steht. \n\nEhrlich gesagt, sagen sehr viele, dass es die umweltbewussteste Ernährung ist, wogegen die anderen auf dem Gegenteil beharren."
+                    android:textColor="#D5090909" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/veganDescButton"
+                        android:layout_width="165dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beschreibung"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/veganJoin"
+                        android:layout_width="144dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beitreten"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ReuseInfo"
+                android:layout_width="249dp"
+                android:layout_height="414dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="170dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/reuseInfoIcon"
+                    android:layout_width="159dp"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/reuse_info" />
+
+                <TextView
+                    android:id="@+id/reuseInfoTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Wiederverwenden Information"
+                    android:textColor="#F3000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/reuseInfoShortDesc"
+                    android:layout_width="199dp"
+                    android:layout_height="128dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:gravity="center"
+                    android:text="Hier findet ihr ein paar Informationen dazu, warum wir auf wiederverwendbare Alternativen umsteigen sollten!"
+                    android:textColor="#D5090909" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/reuseInfoDescButton"
+                        android:layout_width="165dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beschreibung"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reuseBag"
+                android:layout_width="249dp"
+                android:layout_height="414dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="170dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/reuseBagIcon"
+                    android:layout_width="159dp"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/reuse_bag" />
+
+                <TextView
+                    android:id="@+id/reuseBagTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Wiederverwendbare Taschen"
+                    android:textColor="#F3000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/reuseBagShortDesc"
+                    android:layout_width="200dp"
+                    android:layout_height="136dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Plastik-Sackerln lassen sich weder abbauen noch wiederverwenden ... \n\nEs gibt immer mehr Alternativen.  Warum sollten wir diese nicht nutzen?"
+                    android:textColor="#D5090909" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/reuseBagDescButton"
+                        android:layout_width="165dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beschreibung"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/reuseBagJoin"
+                        android:layout_width="144dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beitreten"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reuseCup"
+                android:layout_width="249dp"
+                android:layout_height="414dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="170dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/reuseCupIcon"
+                    android:layout_width="159dp"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/reuse_cup" />
+
+                <TextView
+                    android:id="@+id/reuseCupTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Wiederverwendbare Becher"
+                    android:textColor="#F3000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/reuseCupShortDesc"
+                    android:layout_width="200dp"
+                    android:layout_height="136dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Wiederverwendbare Becher bringen nahezu nur Vorteile mit sich. \n\nWeniger Müll, auffüllbar und immer mit dabei!"
+                    android:textColor="#D5090909" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/reuseCupDescButton"
+                        android:layout_width="165dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beschreibung"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/reuseCupJoin"
+                        android:layout_width="144dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beitreten"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reuseBottle"
+                android:layout_width="249dp"
+                android:layout_height="414dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="170dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/reuseBottleIcon"
+                    android:layout_width="159dp"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/reuse_bottle" />
+
+                <TextView
+                    android:id="@+id/reuseBottleTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Wiederverwendbare Flaschen"
+                    android:textColor="#F3000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/reuseBottleShortDesc"
+                    android:layout_width="200dp"
+                    android:layout_height="136dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Wiederverwendbare Flaschen bringt jede Menge Gutes mit sich!  \n\nMan vermeidet Müll, hat immer eine Flasche dabei, welche man immer wieder auffüllen kann ..."
+                    android:textColor="#D5090909" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/reuseBottleDescButton"
+                        android:layout_width="165dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beschreibung"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/reuseBottleJoin"
+                        android:layout_width="144dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beitreten"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Resources"
+                android:layout_width="249dp"
+                android:layout_height="414dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="170dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/resourcesIcon"
+                    android:layout_width="159dp"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/spare_resources" />
+
+                <TextView
+                    android:id="@+id/resourcesTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Ressourcen schonen"
+                    android:textColor="#F3000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/resourcesShortDesc"
+                    android:layout_width="213dp"
+                    android:layout_height="144dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:text="Wir gehen viel zu achtlos mit den Ressourcen um ... \n\nEin Teil der Rohstoffe ist erneuerbar, der andere wiederrum nicht!"
+                    android:textColor="#D5090909" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/resourcesDescButton"
+                        android:layout_width="165dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beschreibung"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/resourcesJoin"
+                        android:layout_width="144dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beitreten"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/SaveWater"
+                android:layout_width="249dp"
+                android:layout_height="414dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="170dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/saveWaterIcon"
+                    android:layout_width="159dp"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/save_water" />
+
+                <TextView
+                    android:id="@+id/saveWaterTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Wasser sparen"
+                    android:textColor="#F3000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/saveWaterShortDesc"
+                    android:layout_width="213dp"
+                    android:layout_height="144dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:text="Wasser ist, wie wir alle bereits wissen, lebensnotwendig ... \n\nIn vielen Ländern der Welt herrscht Trinkwasserknappheit."
+                    android:textColor="#D5090909" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/saveWaterDescButton"
+                        android:layout_width="165dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beschreibung"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/saveWaterJoin"
+                        android:layout_width="144dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beitreten"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/SavePower"
+                android:layout_width="249dp"
+                android:layout_height="414dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="170dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/savePowerIcon"
+                    android:layout_width="159dp"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/save_power" />
+
+                <TextView
+                    android:id="@+id/savePowerTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Strom sparen"
+                    android:textColor="#F3000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/savePowerShortDesc"
+                    android:layout_width="213dp"
+                    android:layout_height="144dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:text="Wir verbrauchen täglich Strom, auch an Stellen an denen wir ihn nicht mal brauchen würden ..."
+                    android:textColor="#D5090909" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/savePowerDescButton"
+                        android:layout_width="165dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beschreibung"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/savePowerJoin"
+                        android:layout_width="144dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beitreten"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/CarFree"
+                android:layout_width="249dp"
+                android:layout_height="414dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="170dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/carFreeIcon"
+                    android:layout_width="159dp"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/car_free" />
+
+                <TextView
+                    android:id="@+id/carFreeTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Auto frei"
+                    android:textColor="#F3000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/carFreeShortDesc"
+                    android:layout_width="213dp"
+                    android:layout_height="144dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:text="Dass Autoabgase nicht wirklich gut für die Umwelt sind, wissen wir alle ... \n\nWarum nicht mal das Auto zu Hause lassen und eine Alternative wählen?"
+                    android:textColor="#D5090909" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/carFreeDescButton"
+                        android:layout_width="165dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beschreibung"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/carFreeJoin"
+                        android:layout_width="144dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beitreten"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Consumer"
+                android:layout_width="249dp"
+                android:layout_height="414dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="170dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/consumerIcon"
+                    android:layout_width="159dp"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/consumer" />
+
+                <TextView
+                    android:id="@+id/consumerTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Konsumverhalten"
+                    android:textColor="#F3000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/consumerShortDesc"
+                    android:layout_width="213dp"
+                    android:layout_height="144dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:text="Glaubt man es oder nicht, unser Konsumverhalten trägt einiges zur Umwelt bei! \n\nWir haben alles, was wir brauchen, was wollen wir mehr?"
+                    android:textColor="#D5090909" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/consumerDescButton"
+                        android:layout_width="165dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beschreibung"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/consumerJoin"
+                        android:layout_width="144dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beitreten"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ZeroWaste"
+                android:layout_width="249dp"
+                android:layout_height="414dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="170dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/zeroWasteIcon"
+                    android:layout_width="159dp"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/zero_waste" />
+
+                <TextView
+                    android:id="@+id/zeroWasteTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Zero Waste"
+                    android:textColor="#F3000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/zeroWasteShortDesc"
+                    android:layout_width="213dp"
+                    android:layout_height="144dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:text="Müll reduzieren ist eine Sache, versuchen ohne Müll zu leben eine andere! \n\nDie Herausforderung besteht im Finden der Alternativen für alltägliche Produkte."
+                    android:textColor="#D5090909" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/zeroWasteDescButton"
+                        android:layout_width="165dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beschreibung"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/zeroWasteJoin"
+                        android:layout_width="144dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beitreten"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/NoStraws"
+                android:layout_width="249dp"
+                android:layout_height="414dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="170dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/noStrawsIcon"
+                    android:layout_width="159dp"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/no_straws" />
+
+                <TextView
+                    android:id="@+id/noStrawsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Keine Strohhalme"
+                    android:textColor="#F3000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/noStrawsShortDesc"
+                    android:layout_width="213dp"
+                    android:layout_height="144dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:text="Luxus oder Notwendigkeit? \n\nNormalerweise besteht für uns keine Notwendigkeit darin, Strohalme zu verwenden - ohne geht es auch!"
+                    android:textColor="#D5090909" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/noStrawsDescButton"
+                        android:layout_width="165dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beschreibung"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/noStrawsJoin"
+                        android:layout_width="144dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beitreten"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/RegionalSaisonal"
+                android:layout_width="249dp"
+                android:layout_height="414dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="170dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/regsaisIcon"
+                    android:layout_width="159dp"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:srcCompat="@drawable/reg_sais" />
+
+                <TextView
+                    android:id="@+id/regsaisTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Regional und Saisonal"
+                    android:textColor="#F3000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/regsaisShortDesc"
+                    android:layout_width="213dp"
+                    android:layout_height="144dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:text="Egal wo man lebt, man hat überall eine umfangreiche Auswahl an regionalem und saisonalem Obst und Gemüse. \n\nAuf heimische Lebensmittel setzen!"
+                    android:textColor="#D5090909" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/regsaisDescButton"
+                        android:layout_width="165dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beschreibung"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/regsaisJoin"
+                        android:layout_width="144dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFCFC"
+                        android:text="Beitreten"
+                        android:textColor="#E6025309"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

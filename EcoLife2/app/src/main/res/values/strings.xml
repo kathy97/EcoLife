@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EcoLife</string>
+
+    <string-array name="Genders">
+        <item>Geschlecht</item>
+        <item>Männlich</item>
+        <item>Weiblich</item>
+        <item>Anderes</item>
+    </string-array>
+
+    <string-array name="GendersE">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Different</item>
+    </string-array>
+</resources>

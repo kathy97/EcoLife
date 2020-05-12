@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Startseite"
+        android:id="@+id/home"
+        android:onClick="onMenuClick"
+        />
+
+    <item android:title="Gewohnheiten"
+        android:id="@+id/habits"
+        android:onClick="onMenuClick"/>
+
+    <item android:title="Meine Gewohnheiten"
+        android:id="@+id/myhabits"
+        android:onClick="onMenuClick"/>
+
+    <item android:title="Kalender"
+        android:id="@+id/calendar"
+        android:onClick="onMenuClick"/>
+
+
+    <item android:title="Website"
+        android:id="@+id/website"
+        android:onClick="onMenuClick"/>
+
+
+    <item android:title="Sprachen"
+        android:id="@+id/languages"
+        android:onClick="onMenuClick"/>
+
+    <item android:title="Impressum"
+        android:id="@+id/imprint"
+        android:onClick="onMenuClick"/>
+
+</menu>
